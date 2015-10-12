@@ -56,8 +56,8 @@
     /* text-shadow: 1px 1px 1px rgba(127, 127, 127, 0.3); */
 }
 
-.icon-right-open:before { content: '\e800'; } /* '?' */
-.icon-left-open:before { content: '\e801'; } /* '?' */
+.icon-angle-right:before { content: '\e800'; } /* '?' */
+.icon-angle-left:before { content: '\e801'; } /* '?' */
 .icon-angle-circled-down:before { content: '\e802'; } /* '?' */
 .icon-twitter:before { content: '\e803'; } /* '?' */
 .icon-youtube:before { content: '\e804'; } /* '?' */
@@ -333,6 +333,7 @@ body{
     background-size: cover;
     padding-top: 90px;
     position: relative;
+    box-sizing: border-box;
 }
 
 .services__icon{
@@ -344,7 +345,7 @@ body{
 
 .services__icons--video{
     background: url("../img/videoicon.png") no-repeat 50% 50%;
-    
+    opacity: .1;
 }
 
 .services__icons--photo{
@@ -354,7 +355,7 @@ body{
 
 .services__icons--dydka{
     background: url("../img/dydkaicon.png") no-repeat 50% 50%;
-
+    opacity: .1;
 }
 
 .services__icons-set{
@@ -365,7 +366,7 @@ body{
 .pag__left{
     position: absolute;
     top: 0;
-    left: 0;
+    left: 100px;
 
 
 }
@@ -373,11 +374,24 @@ body{
 .pag__right{
     position: absolute;
     top: 0;
-    right: 0;
+    right: 100px;
 }
 
-.services__pag{
+.services__pag i{
     font-size: 56px;
-    
+    color: rgba(255,255,255,.3);
 }
 
+
+.info__text{
+    text-transform: uppercase;
+    font-size: 16px;
+    font-family: "Roboto", sans-serif;
+    line-height: 24px;
+    color: #fff;
+    padding: 60px 60px;
+    background: rgba(0,0,0,.2);
+    border:1px solid #fff;
+    margin-top:60px;
+
+}
