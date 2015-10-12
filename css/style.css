@@ -299,8 +299,19 @@ body{
 .works__item:hover:before{
     opacity: 0;
 }
+/*--------------------------SERVICES--------------------------------*/
 
-.works__item:hover{
-    
+.services__title{
+    font-size: 26px;
+    font-family: "Roboto", sans-serif;
+    text-align: center;
+    line-height: 106px;
+    color: #333333;
+    background-color: #ededed;
+    text-transform: uppercase;
+}
+
+.services{
+    height: 570px;
 
 }
