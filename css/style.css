@@ -98,9 +98,20 @@ body{
 .wrap{
     width: 796px;
     margin: 0 auto;
+    position: relative;
 
 }
 
+.clearfix:after,
+.clearfix:before{
+    content: "";
+    display: table;
+}
+
+.clearfix:after{
+    clear: both;
+
+}
 /*--------------------HEADER*---------------*/
 .header{
     width: 100%;
@@ -213,7 +224,6 @@ body{
 
 /*------------------------------RECENT VIDEO------------------------------*/
 .recent{
-    height: 106px;
     width: 100%;
     background-color: #ededed;
     text-transform: uppercase;
@@ -221,6 +231,7 @@ body{
 }
 
 .recent__title{
+    height: 106px;
     font-size: 26px;
     font-family: "Roboto", sans-serif;
     text-align: center;
@@ -309,9 +320,64 @@ body{
     color: #333333;
     background-color: #ededed;
     text-transform: uppercase;
+
 }
 
 .services{
-    height: 570px;
 
 }
+
+.services__content{
+    height: 570px;
+    background: url("../img/servicesbg.jpg") no-repeat;
+    background-size: cover;
+    padding-top: 90px;
+    position: relative;
+}
+
+.services__icon{
+    height: 52px;
+    display: inline-block;
+    width: 53px;
+    padding: 0 32px;
+}
+
+.services__icons--video{
+    background: url("../img/videoicon.png") no-repeat 50% 50%;
+    
+}
+
+.services__icons--photo{
+    background: url("../img/photoicon.png") no-repeat 50% 50%;
+
+}
+
+.services__icons--dydka{
+    background: url("../img/dydkaicon.png") no-repeat 50% 50%;
+
+}
+
+.services__icons-set{
+
+    text-align: center;
+}
+
+.pag__left{
+    position: absolute;
+    top: 0;
+    left: 0;
+
+
+}
+
+.pag__right{
+    position: absolute;
+    top: 0;
+    right: 0;
+}
+
+.services__pag{
+    font-size: 56px;
+    
+}
+
