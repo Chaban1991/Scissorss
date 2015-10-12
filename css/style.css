@@ -126,7 +126,6 @@ video {
    position:absolute;
    z-index:1;
    min-width:100%;
-   min-height:100%;
    overflow:hidden;
 }
 
@@ -222,7 +221,7 @@ video {
 
 .filter{
     position: absolute;
-    background-color: rgba(46,2,61,.4);
+    background-color: rgba(46,2,61,.5);
     content: "";
     display: block;
     width: 100%;
