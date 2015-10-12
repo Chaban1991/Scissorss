@@ -98,7 +98,7 @@ body{
 .wrap{
     width: 796px;
     margin: 0 auto;
-    
+
 }
 
 /*--------------------HEADER*---------------*/
@@ -152,8 +152,8 @@ body{
 }
 
 .nav__link{
-    font-size: 16px;
-    padding: 0 25px;
+    font-size: 15px;
+    padding: 0 26px;
 
 }
 
@@ -169,6 +169,9 @@ body{
     padding-right: 0px;
 }
 
+.nav__item:first-child>.nav__link{
+    padding-left: 36px;
+}
 
 .header-logo{
 
