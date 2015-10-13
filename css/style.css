@@ -408,11 +408,6 @@ margin: 0 12px;
 line-height: 50px;
 }
 
-.footer__social{
-
-
-}
-
 .social{
 display: inline-block;
 line-height: 162px;
@@ -455,8 +450,14 @@ left: 0;
     border: 1px solid #fff;
     text-align: center;
     background: rgba(0,0,0,.15);
-    height: 123px;
-    line-height: 123px;
-    letter-spacing: 19px;
+    height: 106px;
+    line-height: 106px;
+    letter-spacing: 12px;
+
+}
+.about-wrap{
+    width: 796px;
+    margin: 0 auto;
+    position: relative;
 
 }
