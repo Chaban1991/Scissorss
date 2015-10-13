@@ -45,8 +45,8 @@
       <file leaf-file-name="style.css" pinned="false" current-in-tab="true">
         <entry file="file://$PROJECT_DIR$/css/style.css">
           <provider selected="true" editor-type-id="text-editor">
-            <state vertical-scroll-proportion="0.7796976">
-              <caret line="462" column="1" selection-start-line="462" selection-start-column="1" selection-end-line="462" selection-end-column="1" />
+            <state vertical-scroll-proportion="0.5226782">
+              <caret line="440" column="22" selection-start-line="440" selection-start-column="22" selection-end-line="440" selection-end-column="22" />
               <folding />
             </state>
           </provider>
@@ -67,8 +67,8 @@
       <list>
         <option value="$PROJECT_DIR$/style.css" />
         <option value="$PROJECT_DIR$/index.html" />
-        <option value="$PROJECT_DIR$/css/style.css" />
         <option value="$PROJECT_DIR$/about.html" />
+        <option value="$PROJECT_DIR$/css/style.css" />
       </list>
     </option>
   </component>
@@ -274,8 +274,8 @@
     </entry>
     <entry file="file://$PROJECT_DIR$/css/style.css">
       <provider selected="true" editor-type-id="text-editor">
-        <state vertical-scroll-proportion="0.7796976">
-          <caret line="462" column="1" selection-start-line="462" selection-start-column="1" selection-end-line="462" selection-end-column="1" />
+        <state vertical-scroll-proportion="0.5226782">
+          <caret line="440" column="22" selection-start-line="440" selection-start-column="22" selection-end-line="440" selection-end-column="22" />
           <folding />
         </state>
       </provider>
