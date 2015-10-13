@@ -1,4 +1,7 @@
-/*-------------------------------FONTS-----------------------------------------*/
+
+/*-------------------------------------------------------------------------*/
+/*-------------------------- Шритфы -------------------------------*/
+/*-------------------------------------------------------------------------*/
 
 @font-face {
     font-family: 'fontello';
@@ -63,10 +66,9 @@
 .icon-youtube:before { content: '\e804'; } /* '?' */
 .icon-facebook:before { content: '\e805'; } /* '?' */
 
-
-
-/*-------------------------------FONTS-----------------------------------------*/
-
+/*-------------------------------------------------------------------------*/
+/*-------------------------- Основные стили -------------------------------*/
+/*-------------------------------------------------------------------------*/
 
 
 html, body, div, span, applet, object, iframe, h1, h2, h3, h4, h5, h6, p, blockquote, pre, a, abbr, acronym, address, big, cite, code, del, dfn, em, img, ins, kbd, q, s, samp, small, strike, strong, sub, sup, tt, var, b, u, i, center, dl, dt, dd, ol, ul, li, fieldset, form, label, legend, table, caption, tbody, tfoot, thead, tr, th, td, article, aside, canvas, details, embed, figure, figcaption, footer, header, hgroup, menu, nav, output, ruby, section, summary, time, mark, audio, video {
@@ -89,17 +91,21 @@ a{
 }
 
 body{
-
     font-size: 16px;
     min-width:1170px;
+}
 
+video {
+   position:absolute;
+   z-index:1;
+   min-width:100%;
+   overflow:hidden;
 }
 
 .wrap{
     width: 796px;
     margin: 0 auto;
     position: relative;
-
 }
 
 .clearfix:after,
@@ -110,9 +116,12 @@ body{
 
 .clearfix:after{
     clear: both;
-
 }
-/*--------------------HEADER*---------------*/
+
+/*-------------------------------------------------------------------------*/
+/*-------------------------- Header -------------------------------*/
+/*-------------------------------------------------------------------------*/
+
 .header{
     width: 100%;
     height: 671px;
@@ -122,18 +131,10 @@ body{
     overflow: hidden;
 }
 
-video {
-   position:absolute;
-   z-index:1;
-   min-width:100%;
-   overflow:hidden;
-}
-
 .header-top{
     width: 796px;
     height: 80px;
     line-height: 80px;
-
 }
 
 .header-top__nav{
@@ -144,10 +145,8 @@ video {
 }
 
 .go{
-
     float: left;
 }
-
 
 .go__link{
     font-family: "ubuntu", sans-serif;
@@ -160,27 +159,21 @@ video {
     display: inline-block;
     line-height: 80px;
     text-align: center;
-
 }
 
 .nav__item{
     display: inline-block;
     font-size: 0px;
-
 }
 
 .nav__link{
     font-size: 15px;
     padding: 0 26px;
-
 }
-
-
 
 .nav__link--active{
     text-transform: uppercase;
     color: #fff;
-
 }
 
 .nav__item:nth-child(6)>.nav__link{
@@ -192,10 +185,8 @@ video {
 }
 
 .header-logo{
-
     margin-top: 182px;
 }
-
 
 .header-logo__title{
     font-size: 70px;
@@ -208,9 +199,7 @@ video {
     height: 123px;
     line-height: 123px;
     letter-spacing: 19px;
-
 }
-
 
 .header-down{
     margin-top: 110px;
@@ -229,13 +218,14 @@ video {
     z-index: 2;
 }
 
+/*-------------------------------------------------------------------------*/
+/*-------------------------- Recent -------------------------------*/
+/*-------------------------------------------------------------------------*/
 
-/*------------------------------RECENT VIDEO------------------------------*/
 .recent{
     width: 100%;
     background-color: #ededed;
     text-transform: uppercase;
-
 }
 
 .recent__title{
@@ -268,10 +258,7 @@ video {
     float: left;
     position: relative;
     display: block;
-
 }
-
-
 
 .works__item:nth-child(1){
     background: url("../img/video-1.jpg") no-repeat;
@@ -303,9 +290,7 @@ video {
     background-size: cover;
 }
 
-
 .works__item:before{
-
     position: absolute;
     background-color: rgba(46,2,61,.3);
     content: "";
@@ -318,7 +303,10 @@ video {
 .works__item:hover:before{
     opacity: 0;
 }
-/*--------------------------SERVICES--------------------------------*/
+
+/*-------------------------------------------------------------------------*/
+/*-------------------------- Services -------------------------------*/
+/*-------------------------------------------------------------------------*/
 
 .services__title{
     font-size: 26px;
@@ -328,11 +316,6 @@ video {
     color: #333333;
     background-color: #ededed;
     text-transform: uppercase;
-
-}
-
-.services{
-
 }
 
 .services__content{
@@ -358,7 +341,6 @@ video {
 
 .services__icons--photo{
     background: url("../img/photoicon.png") no-repeat 50% 50%;
-
 }
 
 .services__icons--dydka{
@@ -367,7 +349,6 @@ video {
 }
 
 .services__icons-set{
-
     text-align: center;
 }
 
@@ -375,8 +356,6 @@ video {
     position: absolute;
     top: 0;
     left: 100px;
-
-
 }
 
 .pag__right{
@@ -390,7 +369,6 @@ video {
     color: rgba(255,255,255,.3);
 }
 
-
 .info__text{
     text-transform: uppercase;
     font-size: 16px;
@@ -401,5 +379,8 @@ video {
     background: rgba(0,0,0,.2);
     border:1px solid #fff;
     margin-top:60px;
-
 }
+
+/*-------------------------------------------------------------------------*/
+/*-------------------------- Footer -------------------------------*/
+/*-------------------------------------------------------------------------*/
