@@ -77,7 +77,6 @@ html, body, div, span, applet, object, iframe, h1, h2, h3, h4, h5, h6, p, blockq
     border: 0;
     font-size: 100%;
     vertical-align: baseline;
-
 }
 
 li{
@@ -119,19 +118,6 @@ video {
     clear: both;
 }
 
-
-.footer-down{
-
-
-}
-
-.footer-down-footer{
-    height: 100px;
-    width: 100%;
-    position: absolute;
-    bottom: 0;
-
-}
 /*-------------------------------------------------------------------------*/
 /*-------------------------- Header -------------------------------*/
 /*-------------------------------------------------------------------------*/
@@ -487,7 +473,6 @@ video {
     height: 162px;
     background: #0d0a0b;
     text-align: center;
-
 }
 
 .social__icon{
@@ -523,8 +508,9 @@ line-height: 50px;
 .social{
     display: inline-block;
     line-height: 162px;
-    display: inline-block;
 
+display: inline-block;
+line-height: 162px;
 }
 
 .banner{
@@ -541,7 +527,6 @@ left: 0;
 /*-------------------------------------------------------------------------*/
 /*-------------------------- About -------------------------------*/
 /*-------------------------------------------------------------------------*/
-
 
 .about{
     background: url("../img/filteraabout.jpg");
@@ -580,32 +565,13 @@ left: 0;
     background: rgba(0,0,0,.2);
     height: 106px;
     line-height: 106px;
-    letter-spacing: 10px;
-
+    letter-spacing: 12px;
 }
 
 .about-wrap{
     width: 796px;
     margin: 0 auto;
     position: relative;
-
-}
-
-.about-content{
-    margin-top: 30px;
-    margin-bottom: 145px;
-}
-
-
-.about-content__description{
-    font-size: 16px;
-    font-family: "roboto", sans-serif;
-    color: #fff;
-    border: 1px solid #fff;
-    text-align: left;
-    background: rgba(0,0,0,.2);
-    line-height: 24px;
-    padding: 36px 46px;
 
 }
 
@@ -738,4 +704,114 @@ left: 0;
     right: 15px;
     line-height: 68px;
     font-size: 30px;
+}
+
+
+/*-------------------------------------------------------------------------*/
+/*-------------------------- News -------------------------------*/
+/*-------------------------------------------------------------------------*/
+
+.nav--news-page {
+    background-color: rgba(0,0,0,.5);
+}
+
+.header-top--news {
+    position: absolute;
+    z-index: 25;
+    top: 0;
+    left: 0;
+}
+
+.works__wrap:nth-child(7) .works__item{
+    background: url("../img/video-1.jpg") no-repeat;
+    background-size: cover;
+}
+
+.works__wrap:nth-child(8) .works__item{
+    background: url("../img/video-2.jpg") no-repeat;
+    background-size: cover;
+}
+
+.works__wrap:nth-child(9) .works__item{
+    background: url("../img/video-3.jpg") no-repeat;
+    background-size: cover;
+}
+
+/*--- inner news page ---*/
+
+.body-films-page {
+    background: url('../img/servicesbg.jpg') no-repeat;
+    background-attachment: fixed;
+    background-size: cover;
+}
+
+.films-page-header__block {
+    height: 370px;
+    background: url('../img/video-1.jpg') no-repeat;
+    background-size: cover;
+    position: relative;
+}
+
+.filter--news-page {
+    background-color: rgba(46,2,61,.4);
+}
+
+.films-page-header__content {
+    position: absolute;
+    bottom: 31px;
+    left: 31px;
+    text-transform: uppercase;
+    z-index: 4;
+}
+
+.films-page-header__desc {
+    font-family: 'Roboto', sans-serif;
+    font-size: 14px;
+    color: #e3e3e3;
+}
+
+.films-page-header__title {
+    font-family: 'Roboto', sans-serif;
+    font-size: 30px;
+    font-weight: 700;
+    color: #fff;
+}
+
+.films-page-content {
+    background-color: #ededed;
+    margin-bottom: 75px;
+}
+
+.films-page-content__desc {
+    background-color: #ededed;
+    padding: 55px 55px 60px;
+    color: #2d2d2d;
+    font-family: 'Roboto', sans-serif;
+    font-size: 16px;
+    line-height: 24px;
+}
+
+.films-page-content__info {
+    background-color: #d8d7d7;
+    font-family: 'Roboto', sans-serif;
+    text-align: center;
+}
+
+.films-page-content__info-item {
+    color: #2d2d2d;
+    line-height: 96px;
+    font-weight: 700;
+    font-size: 16px;
+    display: inline;
+    padding: 0 15px;
+}
+
+.films-page-content__info-item i {
+    font-weight: 400;
+    color: #797878;
+}
+
+.films-page-content__video {
+    height: 430px;
+    padding-bottom: 94px;
 }
