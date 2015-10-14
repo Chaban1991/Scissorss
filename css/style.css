@@ -163,12 +163,13 @@ video {
 
 .nav__item{
     display: inline-block;
-    font-size: 0px;
+    transition: all linear .3s;
 }
 
 .nav__link{
     font-size: 15px;
-    padding: 0 26px;
+    padding: 20px 26px;
+    
 }
 
 .nav__link--active{
@@ -546,7 +547,7 @@ left: 0;
 
 .news-block__header:hover .news-block__date {
     transform-origin: 50% 50% 0px;
-    transform: perspective(300px) rotateX(30deg)
+    transform: perspective(300px) rotateX(30deg);
 }
 
 .news-block__title {
