@@ -77,6 +77,7 @@ html, body, div, span, applet, object, iframe, h1, h2, h3, h4, h5, h6, p, blockq
     border: 0;
     font-size: 100%;
     vertical-align: baseline;
+
 }
 
 li{
@@ -118,6 +119,16 @@ video {
     clear: both;
 }
 
+.footer-down{
+
+}
+
+.footer-down-footer{
+    height: 100px;
+    width: 100%;
+    position: absolute;
+    bottom: 0;
+}
 /*-------------------------------------------------------------------------*/
 /*-------------------------- Header -------------------------------*/
 /*-------------------------------------------------------------------------*/
@@ -425,9 +436,8 @@ line-height: 50px;
 .social{
     display: inline-block;
     line-height: 162px;
+    display: inline-block;
 
-display: inline-block;
-line-height: 162px;
 }
 
 .banner{
@@ -444,6 +454,7 @@ left: 0;
 /*-------------------------------------------------------------------------*/
 /*-------------------------- About -------------------------------*/
 /*-------------------------------------------------------------------------*/
+
 
 .about{
     background: url("../img/filteraabout.jpg");
@@ -482,7 +493,7 @@ left: 0;
     background: rgba(0,0,0,.2);
     height: 106px;
     line-height: 106px;
-    letter-spacing: 7px;
+    letter-spacing: 10px;
 
 }
 
@@ -490,6 +501,24 @@ left: 0;
     width: 796px;
     margin: 0 auto;
     position: relative;
+
+}
+
+.about-content{
+    margin-top: 30px;
+
+}
+
+
+.about-content__description{
+    font-size: 17px;
+    font-family: "roboto", sans-serif;
+    color: #fff;
+    border: 1px solid #fff;
+    text-align: left;
+    background: rgba(0,0,0,.2);
+    line-height: 24px;
+    padding: 36px 46px;
 
 }
 
