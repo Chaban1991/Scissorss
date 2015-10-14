@@ -118,6 +118,16 @@ video {
     clear: both;
 }
 
+.main {
+    min-height: 100%;
+    position: relative
+}
+
+
+html, body {
+    height: 100%;
+}
+
 /*-------------------------------------------------------------------------*/
 /*-------------------------- Header -------------------------------*/
 /*-------------------------------------------------------------------------*/
@@ -528,10 +538,13 @@ left: 0;
 /*-------------------------- About -------------------------------*/
 /*-------------------------------------------------------------------------*/
 
+
+
 .about{
     background: url("../img/filteraabout.jpg");
     background-size: cover;
     background-attachment: fixed;
+    box-sizing: border-box;
 }
 
 .banner{
@@ -576,7 +589,6 @@ left: 0;
 
 .about-content{
     margin-top: 30px;
-    margin-bottom: 145px;
 }
 
 .about-content__description{
