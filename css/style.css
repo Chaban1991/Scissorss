@@ -595,3 +595,30 @@ left: 0;
     line-height: 24px;
     transition: background-color linear .2s;
 }
+
+/* ---  inner page news --- */
+
+.news-block__header--in-page:hover {
+    background-color: #66bb68;
+}
+
+.news-block__header--in-page:hover .news-block__date{
+    transform: none;
+}
+
+.news-block--in-page {
+    height: auto;
+}
+
+.news-block__content p,
+.news-block__content h3 {
+    padding: 10px 0;
+}
+.news-block__back {
+    position: absolute;
+    color: #fff;
+    top: 0;
+    right: 15px;
+    line-height: 68px;
+    font-size: 30px;
+}
