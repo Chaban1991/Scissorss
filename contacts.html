@@ -6,8 +6,8 @@
     <link href='https://fonts.googleapis.com/css?family=Roboto:400,700,400italic|Ubuntu:400,500,700' rel='stylesheet' type='text/css'>
     <link rel="stylesheet" href="css/style.css">
 </head>
-<body>
-<header class="contacts">
+<body onload="initialize()" >
+<header>
         <div class="wrap">
             <div class="header-top header-top--contacts">
                 <nav class="header-top__nav nav nav--contacts-page">
@@ -17,7 +17,7 @@
                         <li class="nav__item"><a href="films/index.html" class="nav__link">Films</a></li>
                         <li class="nav__item"><a href="news/index.html" class="nav__link">News</a></li>
                         <li class="nav__item"><a href="/" class="nav__link">Services</a></li>
-                        <li class="nav__item"><a href="/" class="nav__link">Contacts</a></li>
+                        <li class="nav__item"><a href="contacts.html" class="nav__link">Contacts</a></li>
                     </ul>
                 </nav>
                 <div class="header-top__go go">
@@ -26,12 +26,45 @@
             </div>
         </div>
 </header>
-<iframe src="https://www.google.com/maps/d/u/0/embed?mid=zOaam5fc4YpY.kwoYrSOWF8yk" width="100%" height="100%"></iframe>
 
+<div id="map_canvas"></div>
 
+<div class="contacts-position">
+<div class="wrap">
+    <div class="contacts-footer">
+        <div class="footer__social social social--contacts">
+            <a href="" class="social__icon social__icon__contacts"><i class="icon-facebook"></i></a>
+            <a href="" class="social__icon social__icon__contacts"><i class="icon-twitter"></i></a>
+            <a href="" class="social__icon social__icon__contacts"><i class="icon-youtube"></i></a>
+        </div>
+        <div class="contacts-footer__adress">block 2 dudley street LA</div>
+        <div class="contacts-footer__tel">+1 (318) 344-0745</div>
+        </div>
+    </div>
+    </div>
 
-
-
-
+<script src="https://maps.googleapis.com/maps/api/js?sensor=false"></script> <script type="text/javascript">
+    function initialize() {
+        var lating = new google.maps.LatLng(33.9938454,-118.4792583); // 55.775849,37.621123 - это координаты.
+        var mapOptions = {
+            disableDefaultUI: true, // отключение интерфейса, чтобы отображалась только карта
+            zoom: 20, // величина приближения карты
+            center: lating, // центрирование на координаты, которые указывали мы.
+            mapTypeId: google.maps.MapTypeId.ROADMAP /* 
+            в каком виде отображать.
+            ROADMAP – обычная двухмерная карта, используемая по умолчанию
+            SATELLITE – фотографическая карта
+            HYBRID – комбинация фотографий и слоя обычной карты с наиболее важными объектами (дорогами, названиями городов).
+            TERRAIN – физический рельеф местности с отображением высот и гидрографических объектов (гор, рек и т. д.).
+            */
+        };
+        var map = new google.maps.Map(document.getElementById('map_canvas'), mapOptions);
+        var myLatLng = new google.maps.LatLng(33.9938454,-118.4792583);
+        var beachMarker = new google.maps.Marker ({
+            position: myLatLng,
+            map: map,
+        });
+    }
+    </script>  
 </body>
 </html>
