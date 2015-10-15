@@ -4,14 +4,14 @@
 /*-------------------------------------------------------------------------*/
 
 @font-face {
-    font-family: 'fontello';
-    src: url('../font/fontello.eot?21080705');
-    src: url('../font/fontello.eot?21080705#iefix') format('embedded-opentype'),
-    url('../font/fontello.woff?21080705') format('woff'),
-    url('../font/fontello.ttf?21080705') format('truetype'),
-    url('../font/fontello.svg?21080705#fontello') format('svg');
-    font-weight: normal;
-    font-style: normal;
+  font-family: 'fontello';
+  src: url('../font/fontello.eot?50255764');
+  src: url('../font/fontello.eot?50255764#iefix') format('embedded-opentype'),
+       url('../font/fontello.woff?50255764') format('woff'),
+       url('../font/fontello.ttf?50255764') format('truetype'),
+       url('../font/fontello.svg?50255764#fontello') format('svg');
+  font-weight: normal;
+  font-style: normal;
 }
 /* Chrome hack: SVG is rendered more smooth in Windozze. 100% magic, uncomment if you need it. */
 /* Note, that will break hinting! In other OS-es font will be not as sharp as it could be */
@@ -19,52 +19,53 @@
 @media screen and (-webkit-min-device-pixel-ratio:0) {
   @font-face {
     font-family: 'fontello';
-    src: url('../font/fontello.svg?21080705#fontello') format('svg');
+    src: url('../font/fontello.svg?50255764#fontello') format('svg');
   }
 }
 */
-
-[class^="icon-"]:before, [class*=" icon-"]:before {
-    font-family: "fontello";
-    font-style: normal;
-    font-weight: normal;
-    speak: none;
-
-    display: inline-block;
-    text-decoration: inherit;
-    width: 1em;
-    margin-right: .2em;
-    text-align: center;
-    /* opacity: .8; */
-
-    /* For safety - reset parent styles, that can break glyph codes*/
-    font-variant: normal;
-    text-transform: none;
-
-    /* fix buttons height, for twitter bootstrap */
-    line-height: 1em;
-
-    /* Animation center compensation - margins should be symmetric */
-    /* remove if not needed */
-    margin-left: .2em;
-
-    /* you can be more comfortable with increased icons size */
-    /* font-size: 120%; */
-
-    /* Font smoothing. That was taken from TWBS */
-    -webkit-font-smoothing: antialiased;
-    -moz-osx-font-smoothing: grayscale;
-
-    /* Uncomment for 3D effect */
-    /* text-shadow: 1px 1px 1px rgba(127, 127, 127, 0.3); */
+ 
+ [class^="icon-"]:before, [class*=" icon-"]:before {
+  font-family: "fontello";
+  font-style: normal;
+  font-weight: normal;
+  speak: none;
+ 
+  display: inline-block;
+  text-decoration: inherit;
+  width: 1em;
+  margin-right: .2em;
+  text-align: center;
+  /* opacity: .8; */
+ 
+  /* For safety - reset parent styles, that can break glyph codes*/
+  font-variant: normal;
+  text-transform: none;
+ 
+  /* fix buttons height, for twitter bootstrap */
+  line-height: 1em;
+ 
+  /* Animation center compensation - margins should be symmetric */
+  /* remove if not needed */
+  margin-left: .2em;
+ 
+  /* you can be more comfortable with increased icons size */
+  /* font-size: 120%; */
+ 
+  /* Font smoothing. That was taken from TWBS */
+  -webkit-font-smoothing: antialiased;
+  -moz-osx-font-smoothing: grayscale;
+ 
+  /* Uncomment for 3D effect */
+  /* text-shadow: 1px 1px 1px rgba(127, 127, 127, 0.3); */
 }
-
-.icon-angle-right:before { content: '\e800'; } /* '?' */
-.icon-angle-left:before { content: '\e801'; } /* '?' */
-.icon-angle-circled-down:before { content: '\e802'; } /* '?' */
-.icon-twitter:before { content: '\e803'; } /* '?' */
-.icon-youtube:before { content: '\e804'; } /* '?' */
-.icon-facebook:before { content: '\e805'; } /* '?' */
+ 
+.icon-twitter:before { content: '\e800'; } /* '' */
+.icon-youtube:before { content: '\e801'; } /* '' */
+.icon-facebook:before { content: '\e802'; } /* '' */
+.icon-angle-right:before { content: '\e803'; } /* '' */
+.icon-angle-left:before { content: '\e804'; } /* '' */
+.icon-forward:before { content: '\e805'; } /* '' */
+.icon-angle-circled-down:before { content: '\e807'; } /* '' */
 
 /*-------------------------------------------------------------------------*/
 /*-------------------------- Основные стили -------------------------------*/
@@ -120,9 +121,14 @@ video {
 
 .main {
     min-height: 100%;
-    position: relative
+    position: relative;
 }
 
+
+.footer-clear {
+    height: 162px;
+    clear: both;
+}
 
 html, body {
     height: 100%;
@@ -160,26 +166,25 @@ html, body {
 
 .go__link{
     font-family: "ubuntu", sans-serif;
-    font-size: 42px;
-    font-weight: 700;
-    color: #202020;
     width: 100px;
     height: 80px;
-    background-color: #ededed;
+    background: url('../img/logo.png') no-repeat;
+    background-size: cover;
     display: inline-block;
-    line-height: 80px;
-    text-align: center;
 }
 
 .nav__item{
     display: inline-block;
-    transition: all linear .3s;
+    transition: all linear .15s;
+}
+
+.nav__item:hover {
+    opacity: .5;
 }
 
 .nav__link{
     font-size: 15px;
-    padding: 20px 26px;
-    
+    padding: 20px 26px;  
 }
 
 .nav__link--active{
@@ -221,6 +226,11 @@ html, body {
     text-align: center;
     font-size: 50px;
     color: #ededed;
+    transition: all linear .3s;
+}
+
+.header-down:hover {
+    transform: scale(1.1);
 }
 
 .header-down__link i {
@@ -509,6 +519,12 @@ background: #141414;
 display: inline-block;
 line-height: 0;
 margin: 0 12px;
+transition: transform linear .15s, background-color linear .3s;
+}
+
+.social__icon:hover {
+    transform: scale(0.9);
+    background-color: #2b2a2a;
 }
 
 .social__icon i {
@@ -532,7 +548,22 @@ color: #dad9d9;
 line-height: 162px;
 text-transform: none;
 left: 0;
+transition: all linear .2s;
 }
+
+.banner i {
+    color: #424141;
+    transition: all linear .2s;
+}
+
+.banner:hover {
+    color: #a7a6a6;
+    transform: rotate(2deg);
+} 
+
+.banner:hover i {
+    color: #fff;
+} 
 
 /*-------------------------------------------------------------------------*/
 /*-------------------------- About -------------------------------*/
@@ -541,10 +572,9 @@ left: 0;
 
 
 .about{
-    background: url("../img/filteraabout.jpg");
+    background: url("../img/servicesbg.jpg");
     background-size: cover;
     background-attachment: fixed;
-    box-sizing: border-box;
 }
 
 .banner{
@@ -575,7 +605,7 @@ left: 0;
     color: #fff;
     border: 1px solid #fff;
     text-align: center;
-    background: rgba(0,0,0,.2);
+    background: rgba(0,0,0,.3);
     height: 106px;
     line-height: 106px;
     letter-spacing: 12px;
@@ -594,10 +624,11 @@ left: 0;
 .about-content__description{
     font-size: 16px;
     font-family: "roboto", sans-serif;
+    text-transform: uppercase;
     color: #fff;
     border: 1px solid #fff;
     text-align: left;
-    background: rgba(0,0,0,.2);
+    background: rgba(0,0,0,.3);
     line-height: 24px;
     padding: 36px 46px;
 
