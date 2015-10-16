@@ -97,24 +97,33 @@ $(document).ready(function(){
 	 		}
 	});
 	
-	var size = 370,
-    newsContent = $('.info__text'),
-    i = 0;
-    
 
-    for (i = 0; i < newsContent.length; i++) {
-    	newsText = newsContent.eq(i).text();
+	// Обрезание текста
 
-		if(newsText.length > size){
-			newsContent.eq(i).text(newsText.slice(0, size) + ' ...');
-		}
+	function textOverflow(size, content) {
+		var size = size,
+	    newsContent = content,
+	    i = 0;
+	    
 
-			console.log(newsContent.eq(i).text().length);
-	}	
+	    for (i = 0; i < newsContent.length; i++) {
+	    	newsText = newsContent.eq(i).text();
+
+			if(newsText.length > size){
+				newsContent.eq(i).text(newsText.slice(0, size) + ' ...');
+			}
+
+				console.log(newsContent.eq(i).text().length);
+		}	
+	};
+
+	textOverflow(420, $('.news-block__content'));
+	textOverflow(370, $('.info__text'));
+
 
 	// предотвращение выделения блока при двойном щелчке
 	
-	$('div').mousedown(function(event){
+	$('.pag__item').mousedown(function(event){
 	  event.stopPropagation();
 	  event.preventDefault(); 
 	  return false;
