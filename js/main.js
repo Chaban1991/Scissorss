@@ -11,7 +11,9 @@ $(document).ready(function(){
 	 return false;
 	});
 
-	
+
+// Slider
+
 	$('.pag__item').on('click', function(e) {
 	 	e.preventDefault();
 
@@ -60,7 +62,40 @@ $(document).ready(function(){
 	 	
 	 	list.css('left','-' + reqPos +'px');
 
+
 	 });
+
+	$('.services__icon').on('click', function (e) {
+	 		e.preventDefault();
+
+	 		var 
+	 			container = $(this).closest('.services__content'),
+	 			list = container.find('.info__wrap');
+	 		
+	 		if ($(this).hasClass('services__icons--video')) {
+
+	 			$('.info__text').eq(0).addClass('info-active').siblings().removeClass('info-active');
+	 			$('.services__icon').eq(0).addClass('services-active').siblings().removeClass('services-active');
+	 			list.css('left', '0');
+
+	 		}
+
+	 		if ($(this).hasClass('services__icons--photo')) {
+
+	 			$('.info__text').eq(1).addClass('info-active').siblings().removeClass('info-active');
+	 			$('.services__icon').eq(1).addClass('services-active').siblings().removeClass('services-active');
+	 			list.css('left', '-796px');
+
+	 		}
+
+	 		if ($(this).hasClass('services__icons--dydka')) {
+
+	 			$('.info__text').eq(2).addClass('info-active').siblings().removeClass('info-active');
+	 			$('.services__icon').eq(2).addClass('services-active').siblings().removeClass('services-active');
+	 			list.css('left', '-1592px');
+
+	 		}
+	});
 	
 	var size = 370,
     newsContent = $('.info__text'),
@@ -77,6 +112,13 @@ $(document).ready(function(){
 			console.log(newsContent.eq(i).text().length);
 	}	
 
+	// предотвращение выделения блока при двойном щелчке
+	
+	$('div').mousedown(function(event){
+	  event.stopPropagation();
+	  event.preventDefault(); 
+	  return false;
+	});
 
 
 });

@@ -412,10 +412,6 @@ html, body {
     transform: scale(0.8);
 }
 
-.services__icon:hover {
-    opacity: .3;
-}
-
 .services__icons--video{
     background: url("../img/videoicon.png") no-repeat 50% 50%;
     opacity: .1;
