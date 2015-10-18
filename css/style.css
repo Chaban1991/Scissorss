@@ -1223,3 +1223,7 @@ transition: all linear .2s;
     padding-left: 0;
 
 }
+
+.services-page__wrap {
+    float: right;
+}
