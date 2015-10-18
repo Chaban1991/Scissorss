@@ -1122,13 +1122,13 @@ transition: all linear .2s;
 .services-page__content--movie>.services-movie__title {
     padding-right: 50px;
     padding-left: 0;
-    float: right;
+
 }
 
 .services-page__content--movie>.services-movie__desc {
     padding-right: 50px;
     padding-left: 0;
-    float: right;
+
 }
 
 .services-page-preprodaction {
@@ -1215,11 +1215,11 @@ transition: all linear .2s;
 .services-page__content--production>.services-production__title {
     padding-right: 50px;
     padding-left: 0;
-    float: right;
+
 }
 
 .services-page__content--production>.services-production__desc {
     padding-right: 50px;
     padding-left: 0;
-    float: right;
+
 }
