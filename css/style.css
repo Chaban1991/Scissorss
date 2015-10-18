@@ -1079,9 +1079,9 @@ transition: all linear .2s;
 }*/
 
 .services-page-movie {
-    position: absolute;
     box-sizing: border-box;
     width: 100%;
+    background-color: #ededed;
 }
 
 .services-movie__title {
@@ -1109,12 +1109,25 @@ transition: all linear .2s;
 
 .services-page__content--movie {
     width: 50%;
+    padding-left: 0;
     padding-right: 50%;
     background: url('../img/movie.jpg') no-repeat;
     background-size: 50% 100%;
-    background-position: left top;
+    background-position: right top;
     padding-top: 50px;
     padding-bottom: 50px;
+    text-align: right;
+}
 
+.services-page__content--movie>.services-movie__title {
+    padding-right: 50px;
+    padding-left: 0;
+    float: right;
+}
+
+.services-page__content--movie>.services-movie__desc {
+    padding-right: 50px;
+    padding-left: 0;
+    float: right;
 }
 
