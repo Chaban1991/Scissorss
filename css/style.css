@@ -1077,3 +1077,44 @@ transition: all linear .2s;
     height: 500px;
 
 }*/
+
+.services-page-movie {
+    position: absolute;
+    box-sizing: border-box;
+    width: 100%;
+}
+
+.services-movie__title {
+    box-sizing: border-box;
+    font-family: "Roboto", sans-serif;
+    font-size: 22px;
+    font-weight: 700;
+    text-transform: uppercase;
+    color: #474747;
+    line-height: 46px;
+    max-width: 585px;
+    padding-right: 50px;
+}
+
+.services-movie__desc {
+    box-sizing: border-box;
+    font-size: 16px;
+    font-family: "Roboto", sans-serif;
+    line-height: 24px;
+    color: #575757;
+    padding-bottom: 24px;
+    max-width: 585px;
+    padding-right: 50px;
+}
+
+.services-page__content--movie {
+    width: 50%;
+    padding-right: 50%;
+    background: url('../img/movie.jpg') no-repeat;
+    background-size: 50% 100%;
+    background-position: left top;
+    padding-top: 50px;
+    padding-bottom: 50px;
+
+}
+
